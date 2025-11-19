@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mark Vitshetyn is running for Vice President of AEPi. Three generations of leadership. A platform focused on philanthropy, operations, and brotherhood.">
+    <meta property="og:title" content="Mark Vitshetyn for Vice President">
+    <meta property="og:description" content="Experience. Vision. Action. Vote Mark Vitshetyn for AEPi VP.">
+    <meta name="keywords" content="AEPi, Vice President, Mark Vitshetyn, fraternity leadership, philanthropy, brotherhood">
+    <title>Mark Vitshetyn for ΑΕΠ Vice President</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --navy-deep: #1a2947;
+            --navy-medium: #2d4263;
+            --gold-rich: #c49b3a;
+            --gold-light: #d4af37;
+            --cream: #f8f5ed;
+            --cream-dark: #e8e3d6;
+            --charcoal: #2c2c2c;
+            --white: #ffffff;
+            --aepi-blue: #003da5;
+            --aepi-gold: #ffc72c;
+            --shadow: rgba(26, 41, 71, 0.1);
+            --shadow-medium: rgba(26, 41, 71, 0.2);
+            --shadow-strong: rgba(26, 41, 71, 0.3);
+            --font-display: 'Playfair Display', Georgia, serif;
+            --font-body: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 2rem;
+            --spacing-lg: 3rem;
+            --spacing-xl: 4rem;
+            --spacing-xxl: 6rem;
+            --max-width: 1200px;
+            --border-radius: 4px;
+            --transition: all 0.3s ease;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--charcoal);
+            background-color: var(--cream);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: var(--font-display);
+            font-weight: 900;
+            line-height: 1.2;
+            color: var(--navy-deep);
+        }
+
+        h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
+        h2 { font-size: clamp(2rem, 4vw, 3rem); }
+        h3 { font-size: clamp(1.5rem, 3vw, 2.25rem); }
+        h4 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); }
+        h5 { font-size: 1.125rem; }
+
+        .greek-letters {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: var(--aepi-blue);
+            font-weight: 700;
+        }
+
+        .site-header {
+            background: var(--white);
+            border-bottom: 3px solid var(--gold-rich);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px var(--shadow);
+        }
+
+        .nav-container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: var(--spacing-sm) var(--spacing-md);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .crest-img {
+            height: 50px;
+            width: auto;
+        }
+
+        .logo-text-container {
+            font-family: var(--font-display);
+            font-weight: 900;
+            font-size: 1.5rem;
+            color: var(--navy-deep);
+            letter-spacing: 0.05em;
+        }
+
+        .logo-year {
+            color: var(--gold-rich);
+            font-size: 1.25rem;
+            margin-left: 0.25rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: var(--spacing-md);
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--navy-medium);
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            transition: var(--transition);
+            letter-spacing: 0.02em;
+        }
+
+        .nav-link:hover {
+            color: var(--gold-rich);
+        }
+
+        .nav-cta {
+            background: var(--gold-rich);
+            color: var(--white);
+            border-radius: var(--border-radius);
+        }
+
+        .nav-cta:hover {
+            background: var(--gold-light);
+            color: var(--white);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px var(--shadow-medium);
+        }
+
+        .hero {
+            position: relative;
+            background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy-medium) 100%);
+            color: var(--white);
+            padding: var(--spacing-xxl) 0;
+            overflow: hidden;
+        }
+
+        .hero-banner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: repeating-linear-gradient(90deg, transparent, transparent 35px, var(--gold-rich) 35px, var(--gold-rich) 37px);
+            opacity: 0.03;
+            pointer-events: none;
+        }
+
+        .hero-decoration {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gold-rich);
+        }
+
+        .hero-decoration::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background-image: repeating-linear-gradient(90deg, var(--gold-rich) 0px, var(--gold-rich) 20px, transparent 20px, transparent 40px);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero-headline {
+            color: var(--white);
+            margin-bottom: var(--spacing-sm);
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+        }
+
+        .hero-subheadline {
+            font-family: var(--font-display);
+            font-size: clamp(1.25rem, 3vw, 1.75rem);
+            font-weight: 700;
+            color: var(--gold-light);
+            margin-bottom: var(--spacing-md);
+            line-height: 1.4;
+        }
+
+        .hero-tagline {
+            font-size: 1.125rem;
+            font-style: italic;
+            color: var(--cream);
+            margin-bottom: var(--spacing-lg);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: var(--spacing-sm);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .btn-primary {
+            background: var(--gold-rich);
+            color: var(--white);
+            border-color: var(--gold-rich);
+        }
+
+        .btn-primary:hover {
+            background: var(--gold-light);
+            border-color: var(--gold-light);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px var(--shadow-strong);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border-color: var(--white);
+        }
+
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--navy-deep);
+            transform: translateY(-2px);
+        }
+
+        .btn-large {
+            padding: 1.25rem 2.5rem;
+            font-size: 1.125rem;
+        }
+
+        .about {
+            padding: var(--spacing-xxl) 0;
+            background: var(--white);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: var(--spacing-md);
+            position: relative;
+            padding-bottom: var(--spacing-sm);
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--gold-rich);
+        }
+
+        .about-intro {
+            max-width: 900px;
+            margin: 0 auto var(--spacing-lg);
+            text-align: center;
+        }
+
+        .candidate-profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-xl);
+            flex-wrap: wrap;
+        }
+
+        .candidate-photo {
+            flex-shrink: 0;
+        }
+
+        .candidate-photo img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 4px solid var(--gold-rich);
+            box-shadow: 0 8px 24px var(--shadow-medium);
+        }
+
+        .candidate-info {
+            max-width: 600px;
+        }
+
+        .intro-text {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--navy-medium);
+            line-height: 1.6;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-lg);
+        }
+
+        .about-card {
+            background: var(--cream);
+            padding: var(--spacing-lg);
+            border-left: 4px solid var(--gold-rich);
+            transition: var(--transition);
+        }
+
+        .about-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px var(--shadow-medium);
+        }
+
+        .card-title {
+            color: var(--navy-deep);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .card-text {
+            color: var(--charcoal);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .platform {
+            padding: var(--spacing-xxl) 0;
+            background: var(--cream-dark);
+        }
+
+        .platform-intro {
+            max-width: 800px;
+            margin: 0 auto var(--spacing-xl);
+            text-align: center;
+            font-size: 1.125rem;
+            color: var(--navy-medium);
+        }
+
+        .platform-section {
+            background: var(--white);
+            padding: var(--spacing-lg);
+            margin-bottom: var(--spacing-lg);
+            border-top: 4px solid var(--navy-deep);
+            box-shadow: 0 4px 16px var(--shadow);
+        }
+
+        .platform-header {
+            text-align: center;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .platform-title {
+            color: var(--navy-deep);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .platform-subtitle {
+            font-size: 1.125rem;
+            color: var(--gold-rich);
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .platform-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .platform-content > p {
+            margin-bottom: var(--spacing-sm);
+            font-size: 1.0625rem;
+        }
+
+        .pillars {
+            display: grid;
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-lg);
+        }
+
+        .pillar {
+            background: var(--cream);
+            padding: var(--spacing-md);
+            border-left: 6px solid var(--gold-rich);
+        }
+
+        .pillar-number {
+            display: inline-block;
+            width: 48px;
+            height: 48px;
+            background: var(--navy-deep);
+            color: var(--gold-light);
+            border-radius: 50%;
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 900;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .pillar-title {
+            color: var(--navy-deep);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .pillar-description {
+            font-weight: 600;
+            color: var(--navy-medium);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .pillar-content {
+            margin-top: var(--spacing-sm);
+        }
+
+        .initiative {
+            margin-bottom: var(--spacing-sm);
+            padding-left: var(--spacing-sm);
+            border-left: 2px solid var(--gold-light);
+        }
+
+        .initiative h5 {
+            color: var(--navy-medium);
+            font-family: var(--font-body);
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .initiative p {
+            color: var(--charcoal);
+            font-size: 1rem;
+        }
+
+        .initiative-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .initiative-list li {
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+
+        .initiative-list li::before {
+            content: '★';
+            position: absolute;
+            left: 0;
+            color: var(--gold-rich);
+            font-size: 1rem;
+        }
+
+        .impact-note {
+            margin-top: var(--spacing-sm);
+            padding: var(--spacing-sm);
+            background: var(--white);
+            font-style: italic;
+            border-left: 3px solid var(--navy-medium);
+        }
+
+        .targets-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-sm);
+            margin: var(--spacing-md) 0;
+        }
+
+        .target-item {
+            background: var(--cream);
+            padding: var(--spacing-sm);
+            text-align: center;
+            font-weight: 600;
+            color: var(--navy-medium);
+            border: 2px solid var(--gold-light);
+        }
+
+        .emphasis-text {
+            font-weight: 700;
+            color: var(--navy-deep);
+            margin-top: var(--spacing-sm);
+            padding: var(--spacing-sm);
+            background: var(--cream);
+            border-left: 4px solid var(--gold-rich);
+        }
+
+        .support-list {
+            list-style: none;
+            padding-left: 0;
+            margin: var(--spacing-sm) 0;
+        }
+
+        .support-list li {
+            padding: 0.75rem 0 0.75rem 2rem;
+            position: relative;
+            border-bottom: 1px solid var(--cream-dark);
+        }
+
+        .support-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--gold-rich);
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+
+        .board-positions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-lg);
+        }
+
+        .position-card {
+            background: var(--cream);
+            padding: var(--spacing-md);
+            border-top: 3px solid var(--navy-deep);
+            transition: var(--transition);
+        }
+
+        .position-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px var(--shadow-medium);
+        }
+
+        .position-card h4 {
+            color: var(--navy-deep);
+            margin-bottom: var(--spacing-xs);
+            font-size: 1.25rem;
+        }
+
+        .position-focus {
+            font-weight: 600;
+            color: var(--gold-rich);
+            font-style: italic;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .position-card ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: var(--spacing-sm);
+        }
+
+        .position-card ul li {
+            padding-left: 1.25rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+            font-size: 0.9375rem;
+        }
+
+        .position-card ul li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--gold-rich);
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .position-card > p {
+            margin-top: var(--spacing-sm);
+            font-size: 0.9375rem;
+        }
+
+        .flagship-section {
+            background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy-medium) 100%);
+            border-top: none;
+        }
+
+        .flagship-section .platform-header {
+            color: var(--white);
+        }
+
+        .flagship-section .platform-title,
+        .flagship-section .platform-subtitle {
+            color: var(--white);
+        }
+
+        .flagship-section .platform-subtitle {
+            color: var(--gold-light);
+        }
+
+        .initiatives-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-md);
+        }
+
+        .flagship-card {
+            background: var(--white);
+            padding: var(--spacing-md);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .flagship-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 32px var(--shadow-strong);
+        }
+
+        .flagship-number {
+            display: inline-block;
+            width: 56px;
+            height: 56px;
+            background: var(--gold-rich);
+            color: var(--white);
+            border-radius: 50%;
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            font-weight: 900;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--spacing-sm);
+        }
+
+        .flagship-card h4 {
+            color: var(--navy-deep);
+            margin-bottom: var(--spacing-sm);
+            font-size: 1.25rem;
+        }
+
+        .flagship-card p {
+            color: var(--charcoal);
+            font-size: 0.9375rem;
+        }
+
+        .vision {
+            padding: var(--spacing-xxl) 0;
+            background: var(--white);
+        }
+
+        .vision-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .vision-quote {
+            font-family: var(--font-display);
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            font-weight: 700;
+            color: var(--navy-deep);
+            margin: var(--spacing-lg) 0;
+            padding: var(--spacing-md);
+            border-left: 6px solid var(--gold-rich);
+            border-right: 6px solid var(--gold-rich);
+            font-style: italic;
+        }
+
+        .vision-philosophy {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--navy-medium);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .commitments-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-sm);
+            margin: var(--spacing-lg) 0;
+        }
+
+        .commitment-item {
+            background: var(--cream);
+            padding: var(--spacing-sm) var(--spacing-md);
+            font-weight: 600;
+            color: var(--navy-deep);
+            border-left: 3px solid var(--gold-rich);
+        }
+
+        .vision-closing {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--charcoal);
+            margin-top: var(--spacing-lg);
+            font-style: italic;
+        }
+
+        .cta {
+            padding: var(--spacing-xxl) 0;
+            background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy-medium) 100%);
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, var(--gold-rich) 35px, var(--gold-rich) 37px);
+            opacity: 0.03;
+            pointer-events: none;
+        }
+
+        .cta-title {
+            color: var(--white);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .cta-message {
+            font-size: 1.25rem;
+            font-weight: 600;
+            max-width: 800px;
+            margin: 0 auto var(--spacing-lg);
+            line-height: 1.6;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: var(--spacing-sm);
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .contact-label {
+            font-size: 1rem;
+            color: var(--cream);
+            font-style: italic;
+        }
+
+        .site-footer {
+            background: var(--navy-deep);
+            color: var(--cream);
+            padding: var(--spacing-lg) 0;
+            border-top: 4px solid var(--gold-rich);
+        }
+
+        .footer-content {
+            text-align: center;
+        }
+
+        .footer-tagline {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--gold-light);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .footer-disclaimer {
+            font-size: 0.875rem;
+            color: var(--cream-dark);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .footer-social {
+            display: flex;
+            gap: var(--spacing-md);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            color: var(--cream);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border: 2px solid var(--gold-rich);
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background: var(--gold-rich);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --spacing-xxl: 3rem;
+                --spacing-xl: 2.5rem;
+                --spacing-lg: 2rem;
+            }
+            body { font-size: 16px; }
+            .nav-links { gap: var(--spacing-sm); }
+            .nav-link { font-size: 0.875rem; padding: 0.5rem 0.75rem; }
+            .hero { padding: var(--spacing-xl) 0; }
+            .hero-buttons, .cta-buttons { flex-direction: column; align-items: stretch; }
+            .about-grid, .board-positions, .initiatives-grid, .commitments-grid { grid-template-columns: 1fr; }
+            .platform-section { padding: var(--spacing-md); }
+            .candidate-profile { flex-direction: column; }
+            .candidate-photo img { width: 200px; height: 200px; }
+            .crest-img { height: 40px; }
+        }
+
+        @media (max-width: 480px) {
+            .container { padding: 0 var(--spacing-sm); }
+            .nav-container { flex-direction: column; gap: var(--spacing-sm); }
+            .targets-grid { grid-template-columns: 1fr; }
+        }
+
+        ::selection {
+            background: var(--gold-rich);
+            color: var(--white);
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav-container">
+            <div class="nav-logo">
+                <img src="aepi-crest.PNG" alt="ΑΕΠ Crest" class="crest-img">
+                <div class="logo-text-container">
+                    <span class="logo-text">VITSHETYN <span class="logo-year">2025</span></span>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#platform" class="nav-link">Platform</a>
+                <a href="#vision" class="nav-link">Vision</a>
+                <a href="#contact" class="nav-link nav-cta">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-banner"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-headline">Mark Vitshetyn<br>for Vice President</h1>
+                    <p class="hero-subheadline">Three Generations of Leadership.<br>One Clear Vision.</p>
+                    <p class="hero-tagline">The point of the Vice President is not to hear about the Vice President.</p>
+                    <div class="hero-buttons">
+                        <a href="#platform" class="btn btn-primary">Read the Platform</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Mark</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-decoration"></div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="section-title">Why I'm Running</h2>
+                <div class="about-intro">
+                    <div class="candidate-profile">
+                        <div class="candidate-photo">
+                            <img src="mark-vitshetyn.JPEG" alt="Mark Vitshetyn">
+                        </div>
+                        <div class="candidate-info">
+                            <p class="intro-text">I want to be Vice President to serve this fraternity, not for housing points or resume credit. <span class="greek-letters">ΑΕΠ</span> has served me. Now I serve <span class="greek-letters">ΑΕΠ</span>.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <h3 class="card-title">Legacy of Leadership</h3>
+                        <p class="card-text">My Big, Grand-Big, and Great-Grand-Big all served as Vice President. This legacy drives me to push the position further than ever before.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3 class="card-title">Building on Strong Foundations</h3>
+                        <p class="card-text">Gilmurray reshaped this role through philanthropy, organization, and behind-the-scenes leadership. I will continue this momentum, strengthen existing systems, and expand our impact on campus.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3 class="card-title">The Quiet Operator</h3>
+                        <p class="card-text">The best Vice Presidents work behind the scenes. They ensure operations run smoothly, the President has full support, and brotherhood thrives. No credit needed. Just results.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="platform" id="platform">
+            <div class="container">
+                <h2 class="section-title">The Platform</h2>
+                <p class="platform-intro">My vision centers on five core priorities: transformative philanthropy, sustainable operations, stronger brotherhood, and measurable results.</p>
+                
+                <div class="platform-section">
+                    <div class="platform-header">
+                        <h3 class="platform-title">Philanthropy: The Main Focus</h3>
+                        <p class="platform-subtitle">Building a recognizable, respected philanthropic identity for <span class="greek-letters">ΑΕΠ</span></p>
+                    </div>
+                    
+                    <div class="pillars">
+                        <div class="pillar">
+                            <div class="pillar-number">1</div>
+                            <h4 class="pillar-title">New Major Philanthropy Events</h4>
+                            <div class="pillar-content">
+                                <div class="initiative">
+                                    <h5>Inter-Fraternity DJ Event for Charity</h5>
+                                    <p>A large, campus-wide DJ and music event with other fraternities and sororities. This builds visibility, brings communities together, and raises significantly more money than smaller events.</p>
+                                </div>
+                                <div class="initiative">
+                                    <h5>Bring Back Blood Drives</h5>
+                                    <p>Partner with the Red Cross to re-establish <span class="greek-letters">ΑΕΠ</span>-led blood drives as a recurring, semester-long commitment.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pillar">
+                            <div class="pillar-number">2</div>
+                            <h4 class="pillar-title">Long-Term Charity Partnerships</h4>
+                            <div class="pillar-content">
+                                <div class="initiative">
+                                    <h5>Build Real Relationships</h5>
+                                    <p>Work with multiple reputable charities consistently. No more random one-off events. Create a recognizable, meaningful philanthropic identity for <span class="greek-letters">ΑΕΠ</span> on campus.</p>
+                                </div>
+                                <div class="initiative">
+                                    <h5>Strategic Impact</h5>
+                                    <p>This approach makes fundraising easier, more impactful, and more respected across campus and Greek life.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pillar">
+                            <div class="pillar-number">3</div>
+                            <h4 class="pillar-title">Brotherhood-Based Philanthropy</h4>
+                            <p class="pillar-description">Get brothers involved with time and effort, not just dollars.</p>
+                            <div class="pillar-content">
+                                <ul class="initiative-list">
+                                    <li>Habitat for Humanity builds</li>
+                                    <li>Food drives and food bank volunteering</li>
+                                    <li>Animal shelter volunteering</li>
+                                    <li>Campus cleanup days</li>
+                                </ul>
+                                <p class="impact-note">These activities show the campus <span class="greek-letters">ΑΕΠ</span> gives time and effort. This builds our reputation beyond fundraising.</p>
+                            </div>
+                        </div>
+
+                        <div class="pillar">
+                            <div class="pillar-number">4</div>
+                            <h4 class="pillar-title">Improving Philanthropy Operations</h4>
+                            <div class="pillar-content">
+                                <div class="initiative">
+                                    <h5>Coordination with Philanthropy Chairs</h5>
+                                    <p>Work closely to avoid duplicate events like the two pickleball tournaments this semester.</p>
+                                </div>
+                                <div class="initiative">
+                                    <h5>Strategic Planning</h5>
+                                    <p>Streamline planning, create semester calendars early, and diversify events.</p>
+                                </div>
+                                <div class="initiative">
+                                    <h5>Event Standards</h5>
+                                    <p>Never repeat the same event twice unless proven to be highly impactful.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pillar">
+                            <div class="pillar-number">5</div>
+                            <h4 class="pillar-title">Philanthropy Week</h4>
+                            <p class="pillar-description">Coordinate with Social to find the right weekend. Plan a Thursday through Saturday schedule focused on maximum participation and impact.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="platform-section">
+                    <div class="platform-header">
+                        <h3 class="platform-title">Sponsorship Program</h3>
+                        <p class="platform-subtitle">Creating sustainable funding for bigger events and stronger operations</p>
+                    </div>
+                    <div class="platform-content">
+                        <p>Establish a Sponsorship Chair as a permanent Minor Board position. This person works directly with Social, Rush, and Philanthropy to secure partnerships.</p>
+                        <div class="targets-grid">
+                            <div class="target-item">Energy drink sponsorships</div>
+                            <div class="target-item">Restaurant and food sponsors</div>
+                            <div class="target-item">Apparel deals</div>
+                            <div class="target-item">Local business donations</div>
+                        </div>
+                        <p class="emphasis-text">I have real experience doing sponsorship outreach. I will work closely with this chair to teach the process and secure partnerships.</p>
+                    </div>
+                </div>
+
+                <div class="platform-section">
+                    <div class="platform-header">
+                        <h3 class="platform-title">Rush and Pledge Process</h3>
+                        <p class="platform-subtitle">Supporting recruitment through operational excellence</p>
+                    </div>
+                    <div class="platform-content">
+                        <p>My goal is to be the background operator ensuring everything runs smoothly. I stay involved in every internal communication channel to help the President and Exec keep the chapter operating cleanly.</p>
+                        <ul class="support-list">
+                            <li>Maintaining structure</li>
+                            <li>Helping with logistics</li>
+                            <li>Keeping lines of communication open</li>
+                            <li>Ensuring events and expectations are clearly communicated</li>
+                        </ul>
+                        <p class="emphasis-text">This role is about stability, reliability, and making sure everything gets done. Not credit.</p>
+                    </div>
+                </div>
+
+                <div class="platform-section">
+                    <div class="platform-header">
+                        <h3 class="platform-title">Minor Board Overview & Improvements</h3>
+                        <p class="platform-subtitle">Strengthening every position for maximum chapter impact</p>
+                    </div>
+                    <div class="board-positions">
+                        <div class="position-card">
+                            <h4>Academic Chair</h4>
+                            <p class="position-focus">Academics, professionalism, and growth</p>
+                            <ul>
+                                <li>Help brothers and pledges book study rooms regularly</li>
+                                <li>Organize the Brotherhood Professional Day</li>
+                                <li>Run internship and LinkedIn improvement sessions</li>
+                            </ul>
+                        </div>
+
+                        <div class="position-card">
+                            <h4>Philanthropy Chairs</h4>
+                            <p class="position-focus">Central to rebuilding <span class="greek-letters">ΑΕΠ</span>'s philanthropic identity</p>
+                            <ul>
+                                <li>Work closely with VP to avoid duplicate or low-impact events</li>
+                                <li>Coordinate new signature events like the DJ fundraiser</li>
+                                <li>Manage charity partnerships</li>
+                            </ul>
+                        </div>
+
+                        <div class="position-card">
+                            <h4>T-Shirt Chair</h4>
+                            <p class="position-focus">Time for a reset</p>
+                            <ul>
+                                <li>We are leaving Fresh Prints. Seniors confirmed designs used to be much better and cheaper.</li>
+                                <li>Create polls before designs so the entire brotherhood contributes</li>
+                            </ul>
+                        </div>
+
+                        <div class="position-card">
+                            <h4>Jewish Involvement Chair</h4>
+                            <p class="position-focus">They have been doing a great job. The most consistent Minor Board members this semester.</p>
+                            <ul>
+                                <li>Keep up strong partnerships with SRL, Hillel, Chabad, and Sinai</li>
+                                <li>Support Jewish identity and Jewish life events throughout the semester</li>
+                            </ul>
+                        </div>
+
+                        <div class="position-card">
+                            <h4>BPL Commissioner</h4>
+                            <p class="position-focus">BPL needs structure. Right now, scheduling and game counts are the biggest issues.</p>
+                            <p>Already coordinated with Graham: next semester's pledges will have a guaranteed hour each week dedicated to playing BPL games. This fixes the biggest scheduling bottleneck and ensures fairness.</p>
+                        </div>
+
+                        <div class="position-card">
+                            <h4>Intramural (IM) Chair</h4>
+                            <p class="position-focus">IM should not be the same rotating 20 people every sport</p>
+                            <ul>
+                                <li>Increase broader participation in flag football, kickball, softball, and other sports</li>
+                                <li>Join the Greek Basketball Association and let more brothers experience competitive play</li>
+                            </ul>
+                        </div>
+
+                        <div class="position-card">
+                            <h4>Weekend Chairs</h4>
+                            <p class="position-focus">They did a great job this semester. Keep supporting them.</p>
+                            <ul>
+                                <li>Maintain strong planning and coordination</li>
+                                <li>Allow creativity for new theme weekends or collaborations</li>
+                            </ul>
+                        </div>
+
+                        <div class="position-card">
+                            <h4>Sponsorship Chair (New)</h4>
+                            <p class="position-focus">A key new position</p>
+                            <ul>
+                                <li>Work with Social to secure energy drink sponsors, food sponsors, and apparel giveaways</li>
+                                <li>Work directly with the VP to leverage sponsorship outreach experience</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="platform-section flagship-section">
+                    <div class="platform-header">
+                        <h3 class="platform-title">Four Flagship Initiatives</h3>
+                        <p class="platform-subtitle">New programs to strengthen brotherhood and chapter culture</p>
+                    </div>
+                    <div class="initiatives-grid">
+                        <div class="flagship-card">
+                            <div class="flagship-number">1</div>
+                            <h4>Brotherhood Spotlight Series</h4>
+                            <p>Monthly brother highlight for achievements, contributions, or growth. Recognize excellence within the chapter.</p>
+                        </div>
+                        <div class="flagship-card">
+                            <div class="flagship-number">2</div>
+                            <h4>Interfraternity Die Tournament for Charity</h4>
+                            <p>A large die tournament involving other fraternities and sororities to raise money. Fun, competitive, and impactful.</p>
+                        </div>
+                        <div class="flagship-card">
+                            <div class="flagship-number">3</div>
+                            <h4>Brotherhood Professional Day</h4>
+                            <p>Alumni and older brothers speak on internships, careers, and recruiting. Real advice from real experience.</p>
+                        </div>
+                        <div class="flagship-card">
+                            <div class="flagship-number">4</div>
+                            <h4>Big-Little Competition Day</h4>
+                            <p>Fun event where Bigs and Littles compete in games, trivia, and challenges. Strengthen family bonds.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vision" id="vision">
+            <div class="container">
+                <h2 class="section-title">Leadership and Vision</h2>
+                <div class="vision-content">
+                    <blockquote class="vision-quote">
+                        "The point of the Vice President is not to hear about the Vice President."
+                    </blockquote>
+                    <p class="vision-philosophy">The Vice President is the quiet operator behind the scenes.</p>
+                    <div class="commitments-grid">
+                        <div class="commitment-item">Things run smoothly</div>
+                        <div class="commitment-item">The President is supported</div>
+                        <div class="commitment-item">Minor Board is organized</div>
+                        <div class="commitment-item">Communication is clear</div>
+                        <div class="commitment-item">Brotherhood events happen on time</div>
+                        <div class="commitment-item">Philanthropy is strong and consistent</div>
+                    </div>
+                    <p class="vision-closing">My goal is to leave this position stronger than I found the role, just as my Bigs did before me.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta" id="contact">
+            <div class="container">
+                <h2 class="cta-title">Ready to Build Something Bigger?</h2>
+                <p class="cta-message">This chapter deserves leadership focused on service, not credit. Leadership built on three generations of experience. Leadership ready to work.</p>
+                <div class="cta-buttons">
+                    <a href="https://www.linkedin.com/in/markvitshteyn/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">Connect on LinkedIn</a>
+                    <a href="https://www.instagram.com/markv_007/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-large">Follow on Instagram</a>
+                </div>
+                <p class="contact-label">Questions about the platform? Reach out directly.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-tagline">Mark Vitshetyn for <span class="greek-letters">ΑΕΠ</span> Vice President</p>
+                <p class="footer-disclaimer">Paid for by Mark Vitshetyn Campaign</p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/markvitshteyn/" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+                    <a href="https://www.instagram.com/markv_007/" target="_blank" rel="noopener noreferrer" class="social-link">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('a[href^="#"]');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    if (targetSection) {
+                        const headerOffset = 80;
+                        const elementPosition = targetSection.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                    }
+                });
+            });
+
+            const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+            const fadeElements = document.querySelectorAll('.about-card, .platform-section, .position-card, .flagship-card');
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            fadeElements.forEach(element => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(20px)';
+                element.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                observer.observe(element);
+            });
+
+            let lastScroll = 0;
+            const header = document.querySelector('.site-header');
+            window.addEventListener('scroll', () => {
+                const currentScroll = window.pageYOffset;
+                if (currentScroll > 100) {
+                    header.style.boxShadow = '0 4px 16px rgba(26, 41, 71, 0.2)';
+                } else {
+                    header.style.boxShadow = '0 2px 8px rgba(26, 41, 71, 0.1)';
+                }
+                lastScroll = currentScroll;
+            });
+        });
+    </script>
+</body>
+</html>
