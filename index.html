@@ -773,6 +773,51 @@
             margin-bottom: var(--spacing-md);
         }
 
+        .contact-info {
+            margin-top: var(--spacing-lg);
+        }
+
+        .contact-methods {
+            display: flex;
+            gap: var(--spacing-md);
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid var(--gold-light);
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+
+        .contact-method:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .contact-method a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.125rem;
+        }
+
+        .contact-method a:hover {
+            color: var(--gold-light);
+        }
+
+        .contact-icon {
+            font-size: 1.25rem;
+            color: var(--gold-light);
+        }
+
         .contact-label {
             font-size: 1rem;
             color: var(--cream);
@@ -796,6 +841,34 @@
             font-weight: 700;
             color: var(--gold-light);
             margin-bottom: var(--spacing-sm);
+        }
+
+        .footer-contact {
+            margin: var(--spacing-md) 0;
+            padding: var(--spacing-md);
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: var(--border-radius);
+            display: inline-block;
+        }
+
+        .footer-contact-title {
+            font-weight: 700;
+            color: var(--gold-light);
+            margin-bottom: 0.5rem;
+            font-size: 1.125rem;
+        }
+
+        .footer-contact a {
+            color: var(--cream);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            display: inline-block;
+            margin: 0.25rem 0;
+        }
+
+        .footer-contact a:hover {
+            color: var(--gold-light);
         }
 
         .footer-disclaimer {
@@ -843,6 +916,8 @@
             .candidate-profile { flex-direction: column; }
             .candidate-photo img { width: 200px; height: 200px; }
             .crest-img { height: 40px; }
+            .contact-methods { flex-direction: column; width: 100%; }
+            .contact-method { width: 100%; justify-content: center; }
         }
 
         @media (max-width: 480px) {
@@ -861,7 +936,7 @@
     <header class="site-header">
         <nav class="nav-container">
             <div class="nav-logo">
-                <img src="aepi-crest.PNG" alt="ΑΕΠ Crest" class="crest-img">
+                <img src="aepi-crest.png" alt="ΑΕΠ Crest" class="crest-img">
                 <div class="logo-text-container">
                     <span class="logo-text">VITSHETYN <span class="logo-year">2025</span></span>
                 </div>
@@ -1174,6 +1249,16 @@
             <div class="container">
                 <h2 class="cta-title">Ready to Build Something Bigger?</h2>
                 <p class="cta-message">This chapter deserves leadership focused on service, not credit. Leadership built on three generations of experience. Leadership ready to work.</p>
+                
+                <div class="contact-info">
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <span class="contact-icon">📞</span>
+                            <a href="tel:+19194547873">(919) 454-7873</a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="cta-buttons">
                     <a href="https://www.linkedin.com/in/markvitshteyn/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">Connect on LinkedIn</a>
                     <a href="https://www.instagram.com/markv_007/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-large">Follow on Instagram</a>
@@ -1187,7 +1272,14 @@
         <div class="container">
             <div class="footer-content">
                 <p class="footer-tagline">Mark Vitshetyn for <span class="greek-letters">ΑΕΠ</span> Vice President</p>
+                
+                <div class="footer-contact">
+                    <div class="footer-contact-title">Get in Touch</div>
+                    <a href="tel:+19194547873">(919) 454-7873</a>
+                </div>
+
                 <p class="footer-disclaimer">Paid for by Mark Vitshetyn Campaign</p>
+                
                 <div class="footer-social">
                     <a href="https://www.linkedin.com/in/markvitshteyn/" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
                     <a href="https://www.instagram.com/markv_007/" target="_blank" rel="noopener noreferrer" class="social-link">Instagram</a>
